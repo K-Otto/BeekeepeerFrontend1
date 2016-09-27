@@ -22,7 +22,7 @@ public class Add_Person extends AppCompatActivity {
     EditText txtStaffName, txtStaffSurname, txtUserName, txtUserPass;
     int id = 0;
 
-    //STAFF
+
     static User userer = new User();
     List<User> staff = new LinkedList<User>();
     RestUserAPI restUserAPI = new RestUserAPI();
@@ -64,6 +64,7 @@ public class Add_Person extends AppCompatActivity {
 
         if(extras != null)
         {
+
 
             userer.setName(extras.getString("firstName"));
             userer.setSurname(extras.getString("lastName"));

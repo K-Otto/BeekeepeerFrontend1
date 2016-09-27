@@ -32,7 +32,7 @@ public class RestUserAPI implements RestAPI<User, Integer> {
 
     @Override
     public String post(User entity) {
-        final String url = BASE_URL+"saveUser";
+        final String url = BASE_URL+"saveUser?";
         HttpEntity<User> requestEntity = new HttpEntity<User>(entity, requestHeaders);
         HttpEntity<String> responseEntity = restTemplate.exchange(url, HttpMethod.GET, requestEntity, String.class);
         String result = responseEntity.getBody();
